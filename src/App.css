@@ -10,6 +10,20 @@
   color: white;
 }
 
+.ball-container {
+  border: solid red;
+  margin: 5vmin auto;
+}
+
+.ball {
+  position: relative;
+  
+  height: 55vmin;
+  width: 55vmin;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30vmin 30vmin, #444, #000);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

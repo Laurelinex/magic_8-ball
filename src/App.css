@@ -10,9 +10,29 @@
   color: white;
 }
 
+input[type="text"] {
+  /* appearance: none; */
+  border: 3px solid pink;
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 50%;
+  border-radius: 15px;
+}
+
+input[type="submit"] {
+  /* appearance: none; */
+  padding: 0.8rem 0.8rem;
+  font-size: 0.8rem;
+  background: rgb(85, 111, 160);
+  color: black;
+  border: none;
+  border-radius: 15px;
+  margin-left: 1rem
+}
+
 .ball-container {
   border: solid red;
-  
+  width: 100%;
 }
 
 .ball {
@@ -27,7 +47,8 @@
 }
 
 .smaller-white-circle {
-  border: solid pink;
+  border: solid orange;
+  color: red;
   position: absolute;
   left: 13vmin;
   top: 13vmin;

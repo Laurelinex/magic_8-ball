@@ -4,6 +4,7 @@ import Ball from '../components/Ball'
 function BallContainer() {
 
     const [question, setQuestion] = useState("");
+    const [message, setMessage] = useState("8");
 
     const handleQuestionChange = (event) => {
         setQuestion(event.target.value);
@@ -13,20 +14,20 @@ function BallContainer() {
         event.preventDefault();
     }
 
-
     return (
         <div className="ball-container">
-            <form onSubmit={handleQuestionSubmit}>
+            <form className="question-form" onSubmit={handleQuestionSubmit}>
                 <input 
                     type="text" 
                     placeholder="Type your question..."
                     value={question}
                     onChange={handleQuestionChange}
                 ></input>
-                <input type="submit" value="Ask"></input>
+                <input type="submit" value="ASK"></input>
+                {/* <button type="submit">ASK</button> */}
             </form>
             <br></br>
-            <Ball/>
+            <Ball message={message}/>
         </div>
     );
     

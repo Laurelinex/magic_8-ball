@@ -4,24 +4,47 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
+  align-items: center;
+  /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
 .ball-container {
   border: solid red;
-  margin: 5vmin auto;
+  
 }
 
 .ball {
   position: relative;
-  
+  margin: 5vmin auto;
   height: 55vmin;
   width: 55vmin;
   border-radius: 50%;
+  overflow: hidden;
   background: radial-gradient(circle at 30vmin 30vmin, #444, #000);
+  border: solid blue;
+}
+
+.smaller-white-circle {
+  border: solid pink;
+  position: absolute;
+  left: 13vmin;
+  top: 13vmin;
+  width: 28vmin;
+  height: 28vmin;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 18vmin;
+  font-family: sans-serif;
+  text-align: center;
+  line-height: 28vmin;
+  transition: opacity 1s;
+}
+
+.eight {
+  border: solid pink;
+  color: #000;
 }
 
 .App-logo {

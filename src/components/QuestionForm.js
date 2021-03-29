@@ -15,9 +15,9 @@ function QuestionForm({onSubmit}) {
             return
           }
 
-        onSubmit();
+        onSubmit({question});
 
-        setQuestion("Asking the ball...")        
+        setQuestion("Try another question")        
     }
 
     return (

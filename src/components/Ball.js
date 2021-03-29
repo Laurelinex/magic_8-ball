@@ -1,12 +1,23 @@
 function Ball({message}) {
     
-    return(
-        <form className="ball">
+    if(message === "8") {
+
+        return (
+        <div className="ball">
             <div className="smaller-white-circle">
                 <div className="eight"><span>{message}</span></div>
             </div>
-        </form>
-    )
+        </div>
+        ) 
+    } else {
+        return (
+        <div className="ball">
+            <div className="smaller-white-circle">
+                <div className="answer"><span>{message}</span></div>
+            </div>
+        </div>
+        )
+    }
 
 }
 

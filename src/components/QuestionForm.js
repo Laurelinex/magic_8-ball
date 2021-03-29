@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function QuestionForm({onSubmit}) {
+function QuestionForm({onQuestionSubmit}) {
 
     const [question, setQuestion] = useState("");
 
@@ -10,12 +10,13 @@ function QuestionForm({onSubmit}) {
 
     const handleQuestionSubmit = (event) => {
         event.preventDefault();
+        console.log("handleQuestionSubmit triggered", question)
 
-        if (!question){
+        if (!question || question === "Try another question"){
             return
           }
 
-        onSubmit({question});
+        onQuestionSubmit({question});
 
         setQuestion("Try another question")        
     }
@@ -29,7 +30,6 @@ function QuestionForm({onSubmit}) {
                 onChange={handleQuestionChange}
             ></input>
             <input type="submit" value="ASK"></input>
-            {/* <button type="submit">ASK</button> */}
         </form>
     );
 

@@ -20,7 +20,7 @@ function BallContainer() {
         } else if (randomNumber === 1) {
             answer ='It is decidedly so';
         } else if (randomNumber === 2) {
-            answer = 'Reply hazy try again';
+            answer = 'Totes. Hundo P.';
         } else if (randomNumber === 3) {
             answer = 'Cannot predict now';
         } else if (randomNumber === 4) {

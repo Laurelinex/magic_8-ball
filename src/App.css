@@ -80,8 +80,12 @@ input[type="submit"] {
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
-  width: 25vmin;
+  width: 20vmin;
   /* border: solid purple; */
+  font-family: Eurostile;
+  font-style: italic;
+  font-variant: small-caps;
+  font-weight: bold;
   color: black;
   font-size: 3vmin;
 }

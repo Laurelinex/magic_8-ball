@@ -13,24 +13,36 @@ function BallContainer() {
 
     const determineAnswer = (submittedQuestion) => {
         console.log(submittedQuestion);
-        let randomNumber = Math.round(Math.random()*8);
+        let randomNumber = Math.floor(Math.random()*8);
+        console.log(randomNumber);
         let answer = "";
-        if (randomNumber === 0) {
-            answer = 'It is certain';
-        } else if (randomNumber === 1) {
-            answer ='It is decidedly so';
-        } else if (randomNumber === 2) {
-            answer = 'Totes. Hundo P.';
-        } else if (randomNumber === 3) {
-            answer = 'Cannot predict now';
-        } else if (randomNumber === 4) {
-            answer = 'Do not count on it';
-        } else if (randomNumber === 5) {
-            answer = 'Naaaaaah';
-        } else if (randomNumber === 6) {
-            answer = 'Outlook not so good';
-        } else if (randomNumber === 7) {
-            answer = 'Signs point to yes';
+        switch(randomNumber) {
+            case 0:
+                answer = 'It is certain';
+                break;
+            case 1:
+                answer ='It is decidedly so';
+                break;
+            case 2:
+                answer = 'Totes. Hundo P.';
+                break;
+            case 3:
+                answer = 'Cannot predict now';
+                break;
+            case 4:
+                answer = 'Do not count on it';
+                break;
+            case 5:
+                answer = 'Naaaaaah';
+                break;
+            case 6:
+                answer = 'Outlook not so good';
+                break;
+            case 7:
+                answer = 'Signs point to yes';
+                break;
+            default:
+                console.log("default case triggered - should not happen");
         }
         setMessage(answer);
         console.log("determineAnswer triggered", answer)
